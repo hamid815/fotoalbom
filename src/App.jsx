@@ -1,13 +1,17 @@
-
-import './App.css';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Album from "./routes/Album";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        salom
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Home sahifaga kirganda avtomatik birinchi sinfga yo‘naltirish */}
+        <Route path="/" element={<Navigate to="/a/8f3kLm92" />} />
+
+        {/* Albom route */}
+        <Route path="/a/:albumId" element={<Album />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
