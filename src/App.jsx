@@ -6,7 +6,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Home sahifaga kirganda avtomatik birinchi sinfga yo‘naltirish */}
-        <Route path="/" element={<Navigate to="/a/8f3kLm92" />} />
+        {/* <Route path="/" element={<Navigate to="/a/8f3kLm92" />} /> */}
 
         {/* Albom route */}
         <Route path="/a/:albumId" element={<Album />} />

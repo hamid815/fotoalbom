@@ -1,12 +1,51 @@
 {
   "id": "8f3kLm92",
-  "title": "11-A Sinf Albomi",
-  "school": "12-maktab",
-  "class": "11-A",
-  "year": "2025",
-  "gallery": [
-    "/assets/8f3kLm92/1.jpg",
-    "/assets/8f3kLm92/2.jpg",
-    "/assets/8f3kLm92/3.jpg"
+  "school": "39-maktab",
+  "class": "11-B",
+  "year": "2026",
+
+  "photos": [
+    {
+      "id": "post-1",
+      "type": "students",
+      "layout": "horizontal",
+      "items": [
+        {
+          "name": "X.Shukurillayev",
+          "photo": "/assets/3911b/xamid.jpg",
+          "video": "/assets/3911b/xamid.mp4"
+        },
+        {
+          "name": "S.Toshboyev",
+          "photo": "/assets/3911b/sardor.jpg"
+        },
+        {
+          "name": "F.Rustamov",
+          "photo": "/assets/3911b/farrux.jpg"
+        },
+        {
+          "name": "S.Toshboyev",
+          "photo": "/assets/3911b/sohib.png"
+        },{
+          "name": "T.Baratov",
+          "photo": "/assets/3911b/toxir.png"
+        },{
+          "name": "G'.Ahadov",
+          "photo": "/assets/3911b/giyos.png"
+        }
+      ]
+    },
+
+    {
+      "id": "group-1",
+      "type": "group",
+      "layout": "horizontal",
+      "items": [
+        "/assets/3911b/1group1.jpg",
+        "/assets/3911b/1group2.jpg",
+        "/assets/3911b/1group3.jpg",
+        "/assets/3911b/1group4.jpg"
+      ]
+    }
   ]
 }
