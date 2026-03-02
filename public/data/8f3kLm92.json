@@ -40,11 +40,22 @@
       "id": "group-1",
       "type": "group",
       "layout": "horizontal",
+      "text":"Tog'da",
       "items": [
         "/assets/3911b/1group1.jpg",
         "/assets/3911b/1group2.jpg",
         "/assets/3911b/1group3.jpg",
         "/assets/3911b/1group4.jpg"
+      ]
+    },
+    {
+      "id": "group-2",
+      "type": "group",
+      "layout": "vertical",
+      "text":"Yangi-yil | 2025-2026",
+      "items": [
+        "/assets/3911b/yangiyil.jpg"
+        
       ]
     }
   ]

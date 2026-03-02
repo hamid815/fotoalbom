@@ -1,0 +1,91 @@
+.splash {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* LightRays canvas pastda bo‘lishi uchun */
+.light-rays-container {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Text ustida turishi uchun */
+.intro {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  margin-top: 250px;
+}
+
+/* LOGO animation */
+.logo {
+  font-size: 50px;
+  opacity: 0;
+  animation: logoEnter 1.5s ease forwards,
+             logoMoveUp 1s ease forwards 1.5s;
+}
+
+.sub-info {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: infoAppear 1s ease forwards 2.3s;
+}
+
+.sub-info h2 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.sub-info p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+.developer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+/* Animations */
+
+@keyframes logoEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes logoMoveUp {
+  from {
+    transform: scale(1.2) translateY(0);
+  }
+  to {
+    transform: scale(1) translateY(-40px);
+  }
+}
+
+@keyframes infoAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

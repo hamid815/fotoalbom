@@ -40,14 +40,18 @@ export default function Album() {
             </div>
           );
         }
-        
 
         if (block.type === "group") {
           return (
-            <div key={block.id} className="fullscreen-post">
+            <div>
+              <div key={block.id}>
+                <h3 className="group-title">{block.text}</h3>
+              </div>
+              <div key={block.id} className="fullscreen-post">
               <div className="fullscreen-scroll">
                 {block.items.map((img, i) => (
                   <div className="fullscreen-slide" key={i}>
+                   
                     <img src={img} alt={`group-${i}`} />
                     <div className="counter">
                       {i + 1} / {block.items.length}
@@ -55,6 +59,7 @@ export default function Album() {
                   </div>
                 ))}
               </div>
+            </div>
             </div>
           );
         }
