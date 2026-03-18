@@ -1,5 +1,5 @@
 .light-rays-container {
-  width: 100%;
+  min-width: 400px;
   height: 100%;
   position: relative;
   pointer-events: none;

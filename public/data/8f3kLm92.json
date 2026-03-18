@@ -35,19 +35,6 @@
         }
       ]
     },
-
-    {
-      "id": "group-1",
-      "type": "group",
-      "layout": "horizontal",
-      "text":"Tog'da",
-      "items": [
-        "/assets/3911b/1group1.jpg",
-        "/assets/3911b/1group2.jpg",
-        "/assets/3911b/1group3.jpg",
-        "/assets/3911b/1group4.jpg"
-      ]
-    },
     {
       "id": "group-2",
       "type": "group",
@@ -56,6 +43,31 @@
       "items": [
         "/assets/3911b/yangiyil.jpg"
         
+      ]
+    },
+
+    {
+      "id": "group-1",
+      "type": "group",
+      "layout": "horizontal",
+      "text":"Tog'da",
+      "items": [
+        "/assets/3911b/1group2.jpg",
+        "/assets/3911b/1group1.jpg",
+        "/assets/3911b/1group3.jpg",
+        "/assets/3911b/1group4.jpg"
+      ]
+    },
+
+    {
+      "id": "group-1",
+      "type": "group",
+      "layout": "horizontal",
+      "text":"Tog'da | 2",
+      "items": [
+        "/assets/3911b/2group1.png",
+        "/assets/3911b/2group2.png",
+        "/assets/3911b/2group3.jpg"
       ]
     }
   ]

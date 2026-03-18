@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Album from "./routes/Album";
 import LightRays from "./LightRays";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Splash.css";
 
 /* ===== Splash + Album Wrapper ===== */
@@ -21,8 +23,16 @@ function SplashWrapper() {
       setLoading(false);
     }, 5000);
 
+
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1100, // animatsiya vaqti
+    once: true,     // faqat 1 marta ishlaydi
+  });
+}, []);
 
   if (loading) {
     return (
@@ -32,16 +42,16 @@ function SplashWrapper() {
             raysOrigin="top-center"
             raysColor="#ffffff"
             raysSpeed={1}
-            lightSpread={1.2}
-            rayLength={2.3}
+            lightSpread={2.2}
+            rayLength={6.3}
             followMouse={true}
-            mouseInfluence={0.1}
+            mouseInfluence={0.2}
             noiseAmount={0}
             distortion={0}
             className="custom-rays"
             pulsating={false}
-            fadeDistance={1.1}
-            saturation={1.1}
+            fadeDistance={2.5}
+            saturation={1.9}
           />
 
           <div className="intro">

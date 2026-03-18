@@ -16,7 +16,7 @@ export default function Album() {
 
   return (
     <div className="album">
-      <header className="album-header">
+      <header className="album-header" data-aos="fade-down" data-aos-easing="ease-in-sine">
         <h2>{album.class}</h2>
         {/* <h2>{album.school}</h2> */}
         <p>{album.year}</p>
@@ -25,7 +25,7 @@ export default function Album() {
       {album.photos.map((block) => {
         if (block.type === "students") {
           return (
-            <div key={block.id} className="stories">
+            <div key={block.id} className="stories" data-aos="fade-left" data-aos-easing="ease-in-sine">
               {block.items.map((item, i) => (
                 <div
                   key={i}
@@ -43,7 +43,7 @@ export default function Album() {
 
         if (block.type === "group") {
           return (
-            <div>
+            <div data-aos="fade-up" data-aos-easing="ease-in-sine">
               <div key={block.id}>
                 <h3 className="group-title">{block.text}</h3>
               </div>
